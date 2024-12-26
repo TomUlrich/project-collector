@@ -1,11 +1,15 @@
-import './App.css'
+// import React from 'react';
+import './App.css';
+import Card from './components/Card/Card';
 
 function App() {
   return (
-    <>
-      <h1>Project Collector</h1>
-    </>
-  )
+    <div className="App">
+      <h1>Meine Übungsprojekte</h1>
+      <Card title="Projekt 1" description="Beschreibung des Projekts 1" />
+      <Card title="Projekt 2" description="Beschreibung des Projekts 2" />
+    </div>
+  );
 }
 
-export default App
+export default App;

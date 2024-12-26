@@ -24,7 +24,8 @@ dist-ssr
 *.sw?
 
 # Custom directories and files
-README.md
+*.md
+# !README.md
 *.ico
 *.ini
 .env
