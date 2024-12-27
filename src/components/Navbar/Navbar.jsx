@@ -1,5 +1,6 @@
 import './Navbar.css';
 import { useState } from 'react';
+import { Link } from "react-router-dom";
 
 function Navbar() {
 
@@ -18,9 +19,14 @@ function Navbar() {
         <span className="hamburger-bar"></span>
       </div>
       <ul className={`navbar-links ${menuOpen ? 'open' : ''}`}>
-        <li><a href="#home">Home</a></li>
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/about">Über</Link></li>
+        <li><Link to="/contact">Kontakt</Link> </li>
+        <li><Link to="/project01">Projekt 1</Link></li>
+        <li><Link to="/project02">Projekt 2</Link></li>
+        {/* <li><a href="#home">Home</a></li>
         <li><a href="#about">Über</a></li>
-        <li><a href="#contact">Kontakt</a></li>
+        <li><a href="#contact">Kontakt</a></li> */}
       </ul>
     </nav>
   );
