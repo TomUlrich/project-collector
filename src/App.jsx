@@ -1,14 +1,14 @@
 // import React from 'react';
 import './App.css';
-import Card from './components/Card/Card';
-import Navbar from './components/Navbar/Navbar';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from './components/Navbar/Navbar';
 import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
-import Project01 from './pages/Project01/Project01'
-import Project02 from './pages/Project02'
 import NotFound from './pages/404';
+// Projects:
+import ToDoList from './pages/ToDoList/ToDoList'
+import Project02 from './pages/Project02'
 
 
 function App() {
@@ -20,9 +20,9 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
           <Route path='/contact' element={<Contact />} />
-          <Route path='/project01' element={<Project01 />} />
-          <Route path='/project02' element={<Project02 />} />
           <Route path='*' element={<NotFound />} />
+          <Route path='/todolist' element={<ToDoList />} />
+          <Route path='/project02' element={<Project02 />} />
         </Routes>
       </Router>
     </div>

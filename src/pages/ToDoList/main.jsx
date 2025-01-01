@@ -1,7 +1,7 @@
-import Project01 from './Project01';
+import ToDoList from './ToDoList';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Project01 />
+    <ToDoList />
   </React.StrictMode>
 );

@@ -1,14 +1,20 @@
 import Card from "../components/Card/Card";
+import projectData from "../data/projectData";
 
-export default function Home() {
+const Home = () => {
   return (
-    <div id="home" className="home">
-      <h1>Meine Übungsprojekte</h1>
-      <div className="card-container">
-        <Card title="Projekt 1" description="Beschreibung des Projekts 1" />
-        <Card title="Projekt 2" description="Beschreibung des Projekts 2" />
-        <Card title="Projekt 3" description="Beschreibung des Projekts 3" />
-      </div>
+    <div className="home">
+      {projectData.map((project) => (
+        <Card
+          key={project.id}
+          title={project.title}
+          description={project.description}
+          route={project.route}
+          image={project.image}
+        />
+      ))}
     </div>
   );
-}
+};
+
+export default Home;

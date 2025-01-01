@@ -3,7 +3,7 @@ export default function Project02() {
     <div id="project02" className="project02">
       <h2>Projekt 2</h2>
       <p>
-        Dies ist das zweite Übungsprojekt.
+        Dies ist das zweite Übungsprojekt. UUU
       </p>
     </div>
   );
