@@ -16,3 +16,10 @@ h1 {
   gap: 16px;
   padding: 16px;
 }
+
+.home{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 16px;
+}

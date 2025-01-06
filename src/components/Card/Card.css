@@ -1,5 +1,6 @@
 .card {
   position: relative;
+  width:fit-content;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -8,14 +9,28 @@
 }
 
 .card:hover {
-  transform: scale(1.05);
+  /* transform: scale(1.05); */
 }
 
 .card-image {
-  width: 100%;
-  height: 200px;
+  width: auto;
+  height: 500px;
   object-fit: cover;
   transition: opacity 0.3s ease-in-out;
+}
+
+/* Fallback */
+.card-image {
+  background: #f0f0f0; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: #999999;
+}
+
+ .card-image::before {
+  content: "Kein Bild verfügbar";
 }
 
 .card-content {
@@ -62,21 +77,4 @@
 .card-link:hover {
   background: white;
   color: #000;
-}
-
-/* Fallback */
-.card-image {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  background: #f0f0f0; /* Neutrales Grau */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.2rem;
-  color: #999;
-}
-
-.card-image::before {
-  content: "Kein Bild verfügbar";
 }

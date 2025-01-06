@@ -4,7 +4,7 @@ const projectData = [
     title: "Projekt 01",
     description: "Eine To-Do-Liste mit React.",
     route: "/ToDoList",
-    image: "/images/todo-preview.png",
+    image: 'src/pages/ToDoList/images/todo-list-snapshot.PNG'
   },
   {
     id: 2,
