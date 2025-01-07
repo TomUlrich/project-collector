@@ -1,7 +1,7 @@
 const projectData = [
   {
     id: 1,
-    title: "Projekt 01",
+    title: "To-Do-List",
     description: "Eine To-Do-Liste mit React.",
     route: "/ToDoList",
     image: 'src/pages/ToDoList/images/todo-list-snapshot.PNG'

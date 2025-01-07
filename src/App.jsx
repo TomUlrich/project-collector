@@ -7,7 +7,7 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import NotFound from './pages/404';
 // Projects:
-import ToDoList from './pages/ToDoList/ToDoList'
+import ToDoApp from './pages/ToDoList/Components/ToDoApp';
 import Project02 from './pages/Project02'
 
 
@@ -21,7 +21,7 @@ function App() {
           <Route path='/about' element={<About />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='*' element={<NotFound />} />
-          <Route path='/todolist' element={<ToDoList />} />
+          <Route path='/todolist' element={<ToDoApp />} />
           <Route path='/project02' element={<Project02 />} />
         </Routes>
       </Router>

@@ -6,7 +6,7 @@ import TodoItems from './TodoItems';
 
 let count = 0;
 
-const Todo = () => {
+const ToDoApp = () => {
   // State to store the list of todo items
   const [todos, setTodos] = useState([]);
 
@@ -70,4 +70,4 @@ const Todo = () => {
   );
 };
 
-export default Todo;
+export default ToDoApp;
