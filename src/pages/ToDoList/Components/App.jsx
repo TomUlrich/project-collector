@@ -1,4 +1,6 @@
-import './CSS/Todo.css';
+// #todo: rename this file to TodoListApp.jsx
+
+import './CSS/App.css';
 import { useState } from 'react';
 import { useRef } from 'react';
 import { useEffect } from 'react';
@@ -6,7 +8,8 @@ import TodoItems from './TodoItems';
 
 let count = 0;
 
-const ToDoApp = () => {
+// #todo: rename this component to TodoListApp
+const TodoListApp = () => {
   // State to store the list of todo items
   const [todos, setTodos] = useState([]);
 
@@ -70,4 +73,4 @@ const ToDoApp = () => {
   );
 };
 
-export default ToDoApp;
+export default TodoListApp;

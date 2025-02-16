@@ -1,5 +1,6 @@
 .todo {
   width: 600px;
+  max-width: 100%;
   min-height: 732px;
   border-radius: 20px;
   background: #fff;

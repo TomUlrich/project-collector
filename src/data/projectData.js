@@ -4,14 +4,14 @@ const projectData = [
     title: "To-Do-List",
     description: "Eine To-Do-Liste mit React.",
     route: "/ToDoList",
-    image: 'src/pages/ToDoList/images/todo-list-snapshot.PNG'
+    image: 'src/assets/todo-list-snapshot.PNG'
   },
   {
     id: 2,
-    title: "Projekt 02",
-    description: "Ein Wetter-Widget mit React.",
-    route: "/project02",
-    image: "/images/weather-widget.png",
+    title: "React Tutorial by JavaScriptTutorial.net",
+    description: "React Tutorial by JavaScriptTutorial.net including projects.",
+    route: "/reacttutorial",
+    image: "src/assets/JSTnet-Logo.png",
   },
   // Weitere Projekte...
 ];

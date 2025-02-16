@@ -1,3 +1,5 @@
+// #todo: hide hamburger menu when a link is clicked
+
 import './Navbar.css';
 import { useState } from 'react';
 import { Link } from "react-router-dom";
@@ -12,7 +14,7 @@ function Navbar() {
 
   return (
     <nav className="navbar">
-      <div className="navbar-logo">Meine Projekte</div>
+      <div className="navbar-logo"><Link to="/">Meine Projekte</Link></div>
       <div className="navbar-hamburger" onClick={toggleMenu}>
         <span className="hamburger-bar"></span>
         <span className="hamburger-bar"></span>
@@ -23,7 +25,7 @@ function Navbar() {
         <li><Link to="/about">Über</Link></li>
         <li><Link to="/contact">Kontakt</Link> </li>
         <li><Link to="/todolist">ToDoList</Link></li>
-        <li><Link to="/project02">Projekt 2</Link></li>
+        <li><Link to="/reacttutorial">ReactTutorial</Link></li>
         {/* <li><a href="#home">Home</a></li>
         <li><a href="#about">Über</a></li>
         <li><a href="#contact">Kontakt</a></li> */}
