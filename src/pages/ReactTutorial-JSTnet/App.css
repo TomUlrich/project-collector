@@ -1,24 +1,19 @@
 
+
+
 .app {
   text-align: center;
-  font-family: Arial, sans-serif;
 }
 
 h1 {
   color: #333;
-  margin-top: 16px;
+  margin-top: 3.6rem;
+  margin-bottom: 2rem;
 }
 
 .card-container {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  gap: 16px;
-  padding: 16px;
-}
-
-.home{
-  display: flex;
   flex-wrap: wrap;
   gap: 16px;
   padding: 16px;

@@ -13,11 +13,12 @@ import NotFound from './pages/404';
 import TodoListApp from './pages/ToDoList/Components/App';
 import ReactTutorial from './pages/ReactTutorial-JSTnet/App';
 import FavouriteBooks from './pages/ReactTutorial-JSTnet/pages/FavouriteBooks/FavouriteBooks';
+import FavouriteBooksMapped from './pages/ReactTutorial-JSTnet/pages/FavouriteBooks/FavouriteBooksMapped';
 
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <Router>
         <Navbar />
         <Routes>
@@ -29,6 +30,7 @@ function App() {
           <Route path='/todolist' element={<TodoListApp />} />
           <Route path='/reacttutorial' element={<ReactTutorial />} />
           <Route path='/reacttutorial/favouritebooks' element={<FavouriteBooks />} />
+          <Route path='/reacttutorial/favouritebooksmapped' element={<FavouriteBooksMapped />} />
 
           
         </Routes>

@@ -1,15 +1,18 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Link } from "react-router-dom";
-import FavouriteBooks from "./pages/FavouriteBooks/FavouriteBooks";
+import './App.css';
 import Card from "../../components/Card/Card";
-import image from "./images/favourite-books-snapshot.PNG";
+import nonfictionBooks from "./images/nonfiction-books.jpg";
+import fictionBooks from "./images/fiction-books.jpg";
+
 
 const App = () => {
   return (
-    <div>
+    <div className="app">
       <h1>The JavaScriptTUTORIAL.net React Tutorial</h1>
-      {/* <FavouriteBooks /> */}
-      <Card title="Project: Favourite Books" description="A collection of books I loved to read" route="/reacttutorial/favouritebooks" image={image} />
+      {/* Setting route for <FavouriteBooks /> */}
+      <div className="card-container">
+        <Card title="Favourite nonfiction books" description="A collection of nonfiction books I loved to read" route="/reacttutorial/favouritebooks" image={nonfictionBooks} />
+        <Card title="Favourite fiction books - Rendering lists with map()" description="A collection of novels I loved to read" route="/reacttutorial/favouritebooksmapped" image={fictionBooks} />
+      </div>
     </div>
   );
 }
