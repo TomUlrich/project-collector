@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('./src/assets/fonts/roboto/Roboto-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto Slab';
+  src: url('./src/assets/fonts/roboto-slab/RobotoSlab-Regular.ttf') format('truetype');
+}
+
 /* CSS Reset */
 * {
   margin: 0;
@@ -5,9 +15,26 @@
   box-sizing: border-box;
 }
 
-/* Globale Stile */
-body {
-  font-family: Arial, sans-serif;
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --success-color: #28a745;
+  --danger-color: #dc3545;
+  --warning-color: #ffc107;
+  --info-color: #17a2b8;
+  --light-color: #f8f9fa;
+  --dark-color: #343a40;
+  --text-color: #333;
+  --background-color: #ffffff;
+  --card-border-color: #ff6347; /* Tomato */
+  --card-background-color: #f0e68c; /* Khaki */
+  --card-text-color: #4682b4; /* SteelBlue */
+}
+
+/* Global Styles */
+body {  
+  font-family: 'Roboto', Arial, sans-serif;
+  font-family: 'Roboto Slab', Arial, sans-serif;
   background-color: #f8f9fa;
   color: #333;
 }

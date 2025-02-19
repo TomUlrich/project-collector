@@ -14,18 +14,18 @@ function FavouriteBooksMapped() {
     { cover: watchmen, title: "Watchmen", author: "Alan Moore" }
   ];
 
-  // 2a. Use the map() method to render the list of books
-  // 2b. Use the randomUUID() method from the crypto module to generate a unique key for each book
-  // const renderedBooks = books.map((book) => {
-  //   return (<Book key={crypto.randomUUID()} cover={book.cover} title={book.title} author={book.author} />)
-  // })
-  const renderedBooks = books.map((book, index) => {
-    return (<Book key={index} cover={book.cover} title={book.title} author={book.author} />)
+  // 2a. Use the map() method to transform an array of data into an array of elements in JSX.
+  // 2b. Use the randomUUID() method from the crypto module to generate a unique key for each book when rendering a list in JSX.
+  const renderedBooks = books.map((book) => {
+    return (<Book key={crypto.randomUUID()} cover={book.cover} title={book.title} author={book.author} />)
   })
+  // const renderedBooks = books.map((book, index) => {
+  //   return (<Book key={index} cover={book.cover} title={book.title} author={book.author} />)
+  // })
 
   // 3. Render the list of books
   return (
-    <div className="favourite-books">
+    <div>
       <h2>Favourite Fiction Books</h2>
       <h3>Rendering lists with map()</h3>
       <p>From the <a href="https://www.javascripttutorial.net/react-tutorial/react-jsx-key/">React JSX Key Prop Tutorial</a>: how to render a list of elements properly using the key prop.</p>
