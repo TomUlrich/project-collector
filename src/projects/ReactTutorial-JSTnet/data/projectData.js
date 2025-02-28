@@ -4,14 +4,14 @@ const projectData = [
     title: 'Props',
     description: 'Learn to pass data from the parent component to child components using props.',
     route: '/react-tutorial/props/',
-    image: './src/pages/ReactTutorial-JSTnet/images/nonfiction-books.jpg',
+    image: './src/projects/ReactTutorial-JSTnet/images/nonfiction-books.jpg',
     tutorialURL: 'https://www.javascripttutorial.net/react-tutorial/react-props/',
   },
   {
     title: 'Key Prop',
     description: 'Rendering a list properly using a key prop.',
     route: '/react-tutorial/key-prop/',
-    image: './src/pages/ReactTutorial-JSTnet/images/fiction-books.jpg',
+    image: './src/projects/ReactTutorial-JSTnet/images/fiction-books.jpg',
     tutorialURL: 'https://www.javascripttutorial.net/react-tutorial/react-jsx-key/',
   },
   {

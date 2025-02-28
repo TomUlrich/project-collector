@@ -1,19 +1,14 @@
-
-/* #hl1: Card.css */ 
-.card {
+/* .card {
   position: relative;
-  /* width:fit-content; */
   width:400px;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s;
   cursor: pointer;
+  color: red;
 }
 
-.card:hover {
-  /* transform: scale(1.05); */
-}
 
 .card-image {
   width: 100%;
@@ -22,7 +17,6 @@
   transition: opacity 0.3s ease-in-out;
 }
 
-/* Fallback */
 .card-image {
   background: #f0f0f0; 
   display: flex;
@@ -75,9 +69,72 @@
   padding: 8px 16px;
   border-radius: 4px;
   transition: background 0.3s ease;
+  font-weight: 900;
 }
 
 .card-link:hover {
   background: white;
   color: #000;
+} */
+
+.cardImage {
+	display: block;
+	width: 100%;
+  
+}
+
+.title {
+	margin: 0;
+	font-size: 1.4rem;
+}
+
+@media (min-width: 50em) {
+	.title {
+		font-size: 1.8rem;
+	}
+}
+
+.card {
+	--shadowColor: 187 60% 40%;
+	display: flex;
+	flex-wrap: wrap;
+	background: hsl(187 70% 85%);
+	max-width: 500px;
+	width: 100%;
+	box-shadow: 0.65rem 0.65rem 0 hsl(var(--shadowColor) / 1);
+	border-radius: 0.8rem;
+	overflow: hidden;
+	border: 0.5rem solid;
+	/* border: 0.2rem solid; */
+}
+
+.cardImage {
+	aspect-ratio: 3 / 2;
+	object-fit: cover;
+	/* object-fit: contain; */
+	flex: 1 1 150px;
+	outline: 0.5rem solid;
+  height: 150px;
+  height: 100%;
+}
+
+.textColumn {
+	padding: min(2rem, 5vw) min(2rem, 5vw) min(2.5rem, 5vw);
+	flex: 1 0 50%;
+}
+
+.textColumn > * + * {
+	margin: min(1.5rem, 2.5vw) 0 0 0;
+}
+
+.card a  {
+	display: inline-block;
+	color: black;
+	padding: 0.5rem 1rem;
+	text-decoration: none;
+	background: hsl(187 75% 64%);
+	border-radius: 0.6rem;
+	font-weight: 700;
+	border: 0.35rem solid;
+  
 }

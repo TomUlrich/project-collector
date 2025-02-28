@@ -46,7 +46,7 @@ src/
 │   ├── react.svg
 │   └── todo-list-snapshot.PNG
 ├── components/
-│   ├── Card/
+│   ├── Card/ 
 │   │   ├── Card-copy.css
 │   │   ├── Card-copy2.css
 │   │   ├── Card.css

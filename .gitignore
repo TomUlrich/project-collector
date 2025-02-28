@@ -25,7 +25,7 @@ dist-ssr
 
 # Custom directories and files
 # *.md
-# !README.md
+README.md
 *.ico
 *.ini
 .env

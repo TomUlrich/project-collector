@@ -7,11 +7,11 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import NotFound from './pages/404';
 // Projects:
-import TodoList from './pages/ToDoList/Components/App';
+import TodoList from './projects/ToDoList/Components/App';
 // JST - React Tutorial
-import ReactTutorial from './pages/ReactTutorial-JSTnet/App';
-import FavouriteBooks from './pages/ReactTutorial-JSTnet/pages/FavouriteBooks/FavouriteBooks';
-import FavouriteBooksMapped from './pages/ReactTutorial-JSTnet/pages/FavouriteBooks/FavouriteBooksMapped';
+import ReactTutorial from './projects/ReactTutorial-JSTnet/App';
+import FavouriteBooks from './projects/ReactTutorial-JSTnet/lessons/FavouriteBooks/FavouriteBooks';
+import FavouriteBooksMapped from './projects/ReactTutorial-JSTnet/lessons/FavouriteBooks/FavouriteBooksMapped';
 // ## import ConditionalRendering from '';
 
 function App() {
