@@ -24,10 +24,11 @@ dist-ssr
 *.sw?
 
 # Custom directories and files
-*.md
+# *.md
 # !README.md
 *.ico
 *.ini
 .env
 
 fonts/
+

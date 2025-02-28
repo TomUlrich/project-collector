@@ -1,5 +1,5 @@
-import Book from "./Components/Book/Book"
 import "./FavouriteBooks.css"
+import Book from "./Components/Book/Book"
 import leben from "./images/wie-wollen-wir-leben.jpg"
 import disziplin from "./images/disziplin.jpg"
 import eloquentJS from "./images/eloquentJS.jpg"
