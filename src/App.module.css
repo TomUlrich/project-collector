@@ -1,0 +1,22 @@
+/* HOMEPAGE Styles */
+/* eventually extend to GLOBAL styles for alignments, Headings, etc. */
+
+.home .app {
+  text-align: center;
+}
+
+/* #todo: style headings */
+.home h1 {
+  color: #333;
+  text-align: center;
+  /* margin-top: 16px; */
+}
+
+.home .cardContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 16px;
+}
+

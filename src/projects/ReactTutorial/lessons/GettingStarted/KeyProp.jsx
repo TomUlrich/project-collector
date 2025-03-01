@@ -1,5 +1,5 @@
 import Book from "./Components/Book/Book"
-import "./FavouriteBooks.css"
+import "./GettingStarted.css"
 import christine from "./images/christine.jpg"
 import kommSuesserTod from "./images/komm-suesser-tod.jpg"
 import stadtDerDiebe from "./images/stadt-der-diebe.jpg"

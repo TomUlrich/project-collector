@@ -1,0 +1,82 @@
+.card {
+  --shadowColor: 49 92% 67%;
+  display: flex;
+  /* #hl1: flex-wrap on/off: */
+  /* flex-wrap: wrap; */
+  background: #f8dc5f2c;
+  max-width: 540px;
+  width: 100%;
+  box-shadow: 0.65rem 0.65rem 0 hsl(var(--shadowColor) / 1);
+  border-radius: 0.8rem;
+  overflow: hidden;
+  border: 0.4rem solid;
+}
+
+.cardImage {
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  outline: 0.4rem solid;
+  width: 100%;
+}
+
+.textColumn {
+  padding: min(1.5rem, 5vw) min(1.4rem, 5vw) 0;
+  flex: 1 0 60%;
+  font-size: 0.8rem;
+}
+
+.title {
+  margin: 0;
+  font-size: 1.4rem;
+  margin-bottom: min(1rem, 3vw);
+}
+
+  /* #hl1: Breakpoints: */
+@media (min-width: 600px) {
+  .cardImage {
+    flex: 1 1 150px;
+  }
+
+  .title {
+    font-size: 1.7rem;
+		line-height: 2rem;
+  }
+}
+
+.description {
+  margin-bottom: min(1rem, 5vw);
+  margin: 0 min(1rem, 5vw) min(1rem, 5vw);
+  text-align: left;
+}
+
+.textColumn > * + * {
+  /* margin: min(.5rem, 2.5vw) 0 0 0; */
+  /* margin: 0px; */
+}
+
+.cardLink {
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+  background: #f8db5f;
+
+  border-radius: 0.6rem;
+  font-weight: 700;
+  border: 0.2rem solid;
+  margin-right: min(0.5rem, 2.5vw);
+  /* margin-bottom: min(1.5rem, 2.5vw); */
+  margin-bottom: 0.3rem;
+  font-size: 0.7rem;
+  font-size: 0.9rem;
+  padding: 0.3rem 0.6rem;
+
+  /* #hl1: Breakpoints: */
+  @media (min-width: 600px) {
+    /* font-size: 0.9rem; */
+    padding: 0.4rem 0.6rem;
+  }
+
+  &:last-child {
+    margin-bottom: 1.5rem;
+  }
+}

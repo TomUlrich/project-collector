@@ -34,8 +34,6 @@ function Card() {
 export default Card;
 ```
 
-React erstellt automatisch eindeutige Klassennamen, sodass es keine Überschneidungen gibt.
-
 ## React Router
 
 ## Mapping with generated keys

@@ -1,4 +1,4 @@
-import "./FavouriteBooks.css"
+import "./GettingStarted.css"
 import Book from "./Components/Book/Book"
 import leben from "./images/wie-wollen-wir-leben.jpg"
 import disziplin from "./images/disziplin.jpg"
@@ -11,6 +11,7 @@ function FavouriteBooks() {
       <h2>Favourite Nonfiction Books</h2>
       <h3>Passing data with props</h3>
       <p>From the <a href="https://www.javascripttutorial.net/react-tutorial/react-props/">React Props Tutorial</a>: Use React props to pass data down from parent to child components.</p>
+      
       {/* Create Book components that accepts props */}
       <div className="books-container">
         <Book cover={disziplin} title="Disziplin - Die Macht der Selbstkontrolle" author="Ryan Holiday" />

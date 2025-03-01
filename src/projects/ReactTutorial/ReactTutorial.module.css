@@ -1,0 +1,38 @@
+.app {
+  /* text-align: center; */
+  padding-left: 2rem;
+}
+
+h1 {
+  color: #333;
+  margin-top: 3.6rem;
+  margin-bottom: 2rem;
+}
+
+h2{
+  margin-bottom: 1.6rem;
+
+}
+
+section {
+  text-align: left;
+  padding: 2.4rem 0 2.4rem 2rem ;
+  &.greyBg {
+    background-color: #eeeeee;
+    border-radius: 16px 0 0 16px;
+  }
+}
+
+.tutorLogo {
+  height: 2em;
+  vertical-align: middle;
+}
+
+.cardContainer {
+  display: flex;
+  justify-content: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 32px;
+  padding: 16px;
+}

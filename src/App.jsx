@@ -1,4 +1,4 @@
-import './App.css';
+import styles from "./App.module.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from './components/Navbar/Navbar';
 // Pages:
@@ -9,14 +9,14 @@ import NotFound from './pages/404';
 // Projects:
 import TodoList from './projects/ToDoList/Components/App';
 // JST - React Tutorial
-import ReactTutorial from './projects/ReactTutorial-JSTnet/App';
-import FavouriteBooks from './projects/ReactTutorial-JSTnet/lessons/FavouriteBooks/FavouriteBooks';
-import FavouriteBooksMapped from './projects/ReactTutorial-JSTnet/lessons/FavouriteBooks/FavouriteBooksMapped';
+import ReactTutorial from './projects/ReactTutorial/ReactTutorial';
+import Props from './projects/ReactTutorial/lessons/GettingStarted/Props';
+import KeyProp from './projects/ReactTutorial/lessons/GettingStarted/KeyProp';
 // ## import ConditionalRendering from '';
 
 function App() {
   return (
-    <div className="app">
+    <div className={styles.app}>
       <Router>
         <Navbar />
         {/* Connect defined routes with desired components */}
@@ -29,8 +29,8 @@ function App() {
           <Route path='//todo-list' element={<TodoList />} />
           <Route path='/react-tutorial' element={<ReactTutorial />} />
           {/* pathes from projectData.js: */}
-          <Route path='/react-tutorial/props/' element={<FavouriteBooks />} />
-          <Route path='/react-tutorial/key-prop/' element={<FavouriteBooksMapped />} />
+          <Route path='/react-tutorial/props/' element={<Props />} />
+          <Route path='/react-tutorial/key-prop/' element={<KeyProp />} />
           {/* <Route path='/react-tutorial/conditional-rendering' element={<ConditionalRendering />} /> */}
         </Routes>
       </Router>
