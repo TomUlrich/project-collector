@@ -2,7 +2,6 @@
 /* #hl1: Card.css */ 
 .card {
   position: relative;
-  /* width:fit-content; */
   width:400px;
   border-radius: 8px;
   overflow: hidden;

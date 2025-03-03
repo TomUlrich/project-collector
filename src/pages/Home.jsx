@@ -1,6 +1,5 @@
 import styles from "../App.module.css";
-
-import projectData from "../data/projectData";
+import projectData from "../projects/data/projectData";
 import Card from "../components/Card/Card";
 
 const Home = () => {

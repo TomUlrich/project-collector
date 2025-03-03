@@ -1,19 +1,20 @@
 // #! use route as props in Card.jsx
-// imported by ../ReactTutorial/App.jsx
+// imported by ../ReactTutorial/ReactTutorial.jsx
 
-const projectData = [
+const lessonsData = [
   {
     title: 'Props',
     description: 'Learn to pass data from the parent component to child components using props.',
     route: '/react-tutorial/props/',
-    image: './src/projects/ReactTutorial/images/nonfiction-books.jpg',
+    // #? why not image: '../images/nonfiction-books.jpg',
+    image: '/src/projects/ReactTutorial/images/nonfiction-books.jpg',
     tutorialURL: 'https://www.javascripttutorial.net/react-tutorial/react-props/',
   },
   {
     title: 'Key Prop',
     description: 'Rendering a list properly using a key prop.',
     route: '/react-tutorial/key-prop/',
-    image: './src/projects/ReactTutorial/images/fiction-books.jpg',
+    image: '/src/projects/ReactTutorial/images/fiction-books.jpg',
     tutorialURL: 'https://www.javascripttutorial.net/react-tutorial/react-jsx-key/',
   },
   {
@@ -25,4 +26,4 @@ const projectData = [
   },
 ];
 
-export default projectData;
+export default lessonsData;

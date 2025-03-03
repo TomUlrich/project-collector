@@ -2,7 +2,7 @@
   --shadowColor: 49 92% 67%;
   display: flex;
   /* #hl1: flex-wrap on/off: */
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
   background: #f8dc5f2c;
   max-width: 540px;
   width: 100%;
@@ -15,14 +15,22 @@
 .cardImage {
   aspect-ratio: 3 / 2;
   object-fit: cover;
+  /* object-fit: contain; */
   outline: 0.4rem solid;
   width: 100%;
 }
 
 .textColumn {
-  padding: min(1.5rem, 5vw) min(1.4rem, 5vw) 0;
+  padding: 2.5rem 2rem 0;
   flex: 1 0 60%;
-  font-size: 0.8rem;
+}
+
+.cardTextContainer {
+  background-color: #fff;
+  padding: 1.4rem 1.4rem 1.2rem;
+  border-radius: 8px;
+  margin-bottom: 1.2rem;
+  min-height: 140px;
 }
 
 .title {
@@ -31,7 +39,7 @@
   margin-bottom: min(1rem, 3vw);
 }
 
-  /* #hl1: Breakpoints: */
+/* #hl1: Breakpoints: */
 @media (min-width: 600px) {
   .cardImage {
     flex: 1 1 150px;
@@ -39,19 +47,17 @@
 
   .title {
     font-size: 1.7rem;
-		line-height: 2rem;
+    line-height: 2rem;
   }
 }
 
-.description {
-  margin-bottom: min(1rem, 5vw);
-  margin: 0 min(1rem, 5vw) min(1rem, 5vw);
-  text-align: left;
-}
+.cardLinkContainer {
+  display: flex;
+  justify-content: space-between;
+  justify-content: flex-end;
+  margin-right: 2px;
+  margin-bottom: 1.8rem;
 
-.textColumn > * + * {
-  /* margin: min(.5rem, 2.5vw) 0 0 0; */
-  /* margin: 0px; */
 }
 
 .cardLink {
@@ -63,20 +69,14 @@
   border-radius: 0.6rem;
   font-weight: 700;
   border: 0.2rem solid;
-  margin-right: min(0.5rem, 2.5vw);
-  /* margin-bottom: min(1.5rem, 2.5vw); */
+  &:first-child{
+    margin-right: .8rem;
+  }
   margin-bottom: 0.3rem;
-  font-size: 0.7rem;
   font-size: 0.9rem;
   padding: 0.3rem 0.6rem;
-
   /* #hl1: Breakpoints: */
   @media (min-width: 600px) {
-    /* font-size: 0.9rem; */
     padding: 0.4rem 0.6rem;
-  }
-
-  &:last-child {
-    margin-bottom: 1.5rem;
   }
 }

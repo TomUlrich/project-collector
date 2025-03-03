@@ -7,10 +7,15 @@ const Card = ({ title, description, route, image, tutorialURL }) => {
       <img className={styles.cardImage} src={image} alt={`${title} preview`} />
 
       <div className={styles.textColumn}>
-        <h2 className={styles.title}>{title}</h2>
-        <p className={styles.description}>{description}</p>
-        <Link to={route} className={styles.cardLink}>View App</Link>
-        <Link to={tutorialURL} target="_blank" className={styles.cardLink}>Read Lesson</Link>
+        <div className={styles.cardTextContainer}>
+          <h2 className={styles.title}>{title}</h2>
+          <p className={styles.description}>{description}</p>
+        </div>
+        <div className={styles.cardLinkContainer}>
+          <Link to={route} className={styles.cardLink}>View App</Link>
+          <Link to={tutorialURL} target="_blank" className={styles.cardLink}>Read Lesson</Link>
+        </div>
+
       </div>
     </div>
 
