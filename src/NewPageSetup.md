@@ -1,6 +1,6 @@
 # New Page Setup
 
-## Define Route
+## 1. Define Route for each new page
 
 ```jsx
 // src/App.jsx
@@ -12,7 +12,7 @@ import KeyProp from './projects/ReactTutorial/lessons/GettingStarted/KeyProp';
 </Routes>;
 ```
 
-## Optionally add Navbar Link
+### 1.1 Optionally add Navbar Link
 
 ```jsx
 // src/components/Navbar/Navbar.jsx
@@ -22,7 +22,9 @@ import KeyProp from './projects/ReactTutorial/lessons/GettingStarted/KeyProp';
 </li>
 ```
 
-## New PROJECT
+## 2 New project or lesson 
+
+### 2.1 New PROJECT
 
 ```jsx
 // src/projects/data/projectData.js
@@ -37,7 +39,7 @@ const projectData = [
 ];
 ```
 
-## New LESSON (only for ReactTutorial project)
+### 2.2 New LESSON (only for ReactTutorial project)
 
 ```jsx
 // src/projects/ReactTutorial/data/lessonData.js
@@ -47,7 +49,7 @@ const lessonData = [
     title: 'Lesson Title',
     description: 'Lesson Description',
     route: '/react-tutorial/lesson-route/',
-    image: './src/projects/ReactTutorial/images/lesson-screenshot.jpg',
+    image: '/src/projects/ReactTutorial/images/lesson-screenshot.jpg',
     tutorialURL: 'https://www.javascripttutorial.net/react-tutorial/lesson-url/',
   },
 ];

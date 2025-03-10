@@ -15,7 +15,7 @@ import TodoList from './projects/ToDoList/Components/App';
 import ReactTutorial from './projects/ReactTutorial/ReactTutorial';
 import Props from './projects/ReactTutorial/lessons/GettingStarted/Props';
 import KeyProp from './projects/ReactTutorial/lessons/GettingStarted/KeyProp';
-// ## import ConditionalRendering from '';
+import ConditionalRendering from './projects/ReactTutorial/lessons/GettingStarted/ConditionalRendering';
 
 function App() {
   return (
@@ -36,7 +36,7 @@ function App() {
           {/* pathes from projectData.js: */}
           <Route path='/react-tutorial/props/' element={<Props />} />
           <Route path='/react-tutorial/key-prop/' element={<KeyProp />} />
-          {/* <Route path='/react-tutorial/conditional-rendering/' element={<ConditionalRendering />} /> */}
+          <Route path='/react-tutorial/conditional-rendering/' element={<ConditionalRendering />} />
         </Routes>
       </Router>
     </div>

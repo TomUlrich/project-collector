@@ -1,7 +1,7 @@
 // #! use route as props in Card.jsx
 // imported by ../ReactTutorial/ReactTutorial.jsx
 
-const lessonsData = [
+const lessonData = [
   {
     title: 'Props',
     description: 'Learn to pass data from the parent component to child components using props.',
@@ -21,9 +21,9 @@ const lessonsData = [
     title: 'Conditional Rendering',
     description: 'Learn how to render JSX elements based on a condition.',
     route: '/react-tutorial/conditional-rendering/',
-    image: '',
+    image: '/src/projects/ReactTutorial/images/fiction-books.jpg',
     tutorialURL: 'https://www.javascripttutorial.net/react-tutorial/react-conditional-rendering/',
   },
 ];
 
-export default lessonsData;
+export default lessonData;
