@@ -1,9 +1,14 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import styles from "./Card.module.css";
+import { marked } from "marked";
 import DOMPurify from "dompurify";
-import marked from "/src/utils/markdownConfig";
-import hljs from "highlight.js"; // Import Highlight.js for code highlighting
+import hljs from "highlight.js";
+// import "highlight.js/styles/github-dark.css";
+import "highlight.js/styles/monokai-sublime.css";
+// import "highlight.js/styles/nord.css";
+// import "highlight.js/styles/atom-one-light.css";
+// import "highlight.js/styles/github.css";
 import MarkdownOverlay from "../MarkdownOverlay/MarkdownOverlay"; // Import the overlay component
 
 const Card = ({ title, description, route, image, markdown }) => {
@@ -16,12 +21,10 @@ const Card = ({ title, description, route, image, markdown }) => {
       fetch(markdown)
         .then((res) => res.text())
         .then((text) => {
+          console.log("Fetched Markdown:", text);
           const htmlContent = marked(text);
           const sanitizedContent = DOMPurify.sanitize(htmlContent);
           setMarkdownContent(sanitizedContent);
-        })
-        .catch((error) => {
-          console.error(`Error fetching markdown content: ${error}`);
         });
     }
   }, [showOverlay, markdown]);

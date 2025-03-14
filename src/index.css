@@ -1,12 +1,17 @@
 @font-face {
   font-family: 'Roboto';
-  src: url('./src/assets/fonts/roboto/Roboto-Regular.ttf') format('truetype');
+  src: url('/fonts/roboto/Roboto-Regular.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Roboto Slab';
-  src: url('./src/assets/fonts/roboto-slab/RobotoSlab-Regular.ttf') format('truetype');
+  src: url('/fonts/Roboto_Slab/static/RobotoSlab-Regular.ttf') format('truetype');
 }
+
+/* @font-face {
+  font-family: 'Roboto';
+  src: url('/fonts/roboto-mono/RobotoMono-Italic-VariableFont_wght.ttf') format('truetype');
+} */
 
 /* CSS Reset */
 * {
@@ -34,7 +39,6 @@
 /* Global Styles */
 body {  
   font-family: 'Roboto', Arial, sans-serif;
-  font-family: 'Roboto Slab', Arial, sans-serif;
   background-color: #f8f9fa;
   color: #333;
 }

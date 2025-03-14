@@ -1,24 +1,21 @@
 // #! use route as props in Card.jsx
 // imported by ../ReactTutorial/ReactTutorial.jsx
-// #todo: change tutorialURL to readme
+// #todo: change tutorialURL to markdown
 
 const lessonData = [
   {
     title: 'Props',
     description: 'Learn to pass data from the parent component to child components using props.',
     route: '/react-tutorial/props/',
-    // #? why not image: '../images/nonfiction-books.jpg',
     image: '/src/projects/ReactTutorial/images/nonfiction-books.jpg',
-    // tutorialURL: 'https://www.javascripttutorial.net/react-tutorial/react-props/',
-    readme: '/public/Props.md',
+    markdown: '/markdown/Props.md',
   },
   {
     title: 'Key Prop',
     description: 'Rendering a list properly using a key prop.',
     route: '/react-tutorial/key-prop/',
     image: '/src/projects/ReactTutorial/images/fiction-books.jpg',
-    // tutorialURL: 'https://www.javascripttutorial.net/react-tutorial/react-jsx-key/',
-    readme: '/public/KeyProp.md',
+    markdown: '/markdown/KeyProp.md',
   },
   {
     title: 'Conditional Rendering',
@@ -26,10 +23,7 @@ const lessonData = [
     route: '/react-tutorial/conditional-rendering/',
     // image: '/src/projects/ReactTutorial/images/fiction-books.jpg',
     image: 'https://via.placeholder.com/150',
-    // tutorialURL: 'https://www.javascripttutorial.net/react-tutorial/react-conditional-rendering/',
-    // tutorialURL: 'https://www.javascripttutorial.net/react-tutorial/react-conditional-rendering/',
-    // readmeLink: 'https://www.javascripttutorial.net/react-tutorial/react-conditional-rendering/',
-    readme: '/public/ConditionalRendering.md',
+    markdown: '/markdown/ConditionalRendering.md',
   },
 ];
 

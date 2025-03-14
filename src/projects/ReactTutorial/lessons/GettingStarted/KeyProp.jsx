@@ -5,7 +5,7 @@ import kommSuesserTod from "./images/komm-suesser-tod.jpg"
 import stadtDerDiebe from "./images/stadt-der-diebe.jpg"
 import watchmen from "./images/watchmen.jpg"
 
-function FavouriteBooksMapped() {
+function KeyProp() {
   // 1. Create an array of objects, each object represents a book 
   const books = [
     { cover: kommSuesserTod, title: "Komm süßer Tod", author: "Wolf Haas" },
@@ -37,4 +37,4 @@ function FavouriteBooksMapped() {
   )
 }
 
-export default FavouriteBooksMapped
+export default KeyProp

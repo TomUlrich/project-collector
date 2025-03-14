@@ -1,7 +1,7 @@
-*, h1, h2, h3, h4, h5, h6 {
+/* *, h1, h2, h3, h4, h5, h6 {
 
   color: #23241F;
-}
+} */
 
 .overlay {
   position: fixed;
@@ -16,16 +16,16 @@
   z-index: 1000;
 }
 
+/* #todo: style the overlay */
 .overlayContent {
-  background-color: white;
-  padding: 20px;
+  background-color: #eeeeee;
+  padding: 0 5vw;;
   max-width: 800px;
   max-height: 80%;
   overflow-y: auto;
   border-radius: 10px;
   position: relative;
   width: 90%;
-  color: red;
 }
 
 .closeButton {
