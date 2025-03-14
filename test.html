@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Markdown Overlay</title>
+  <!-- Marked.js für Markdown -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+  <!-- Highlight.js für Syntax-Highlighting -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      display: none;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .content {
+      background: white;
+      padding: 20px;
+      max-width: 600px;
+      max-height: 80%;
+      overflow: auto;
+      border-radius: 8px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      font-size: 24px;
+      color: white;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+  <button onclick="openOverlay()">Markdown anzeigen</button>
+
+  <div class="overlay" id="overlay">
+    <div class="close-btn" onclick="closeOverlay()">×</div>
+    <div class="content" id="markdown-content">
+      Lade Inhalt...
+    </div>
+  </div>
+
+  <script>
+    async function openOverlay() {
+      const response = await fetch('README.md'); // Pfad zur Markdown-Datei
+      const text = await response.text();
+      document.getElementById('markdown-content').innerHTML = marked.parse(text);
+
+      // Syntax-Highlighting anwenden
+      document.querySelectorAll('pre code').forEach(block => {
+        hljs.highlightElement(block);
+      });
+
+      document.getElementById('overlay').style.display = 'flex';
+    }
+
+    function closeOverlay() {
+      document.getElementById('overlay').style.display = 'none';
+    }
+  </script>
+
+</body>
+
+</html>

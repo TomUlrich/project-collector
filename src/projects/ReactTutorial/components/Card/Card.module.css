@@ -1,7 +1,7 @@
 .card {
+  position: relative;
   --shadowColor: 49 92% 67%;
   display: flex;
-  /* #hl1: flex-wrap on/off: */
   flex-wrap: wrap;
   background: #f8dc5f2c;
   max-width: 540px;
@@ -15,7 +15,6 @@
 .cardImage {
   aspect-ratio: 3 / 2;
   object-fit: cover;
-  /* object-fit: contain; */
   outline: 0.4rem solid;
   width: 100%;
 }
@@ -39,7 +38,6 @@
   margin-bottom: min(1rem, 3vw);
 }
 
-/* #hl1: Breakpoints: */
 @media (min-width: 600px) {
   .cardImage {
     flex: 1 1 150px;
@@ -57,7 +55,6 @@
   justify-content: flex-end;
   margin-right: 2px;
   margin-bottom: 1.8rem;
-
 }
 
 .cardLink {
@@ -65,18 +62,21 @@
   color: black;
   text-decoration: none;
   background: #f8db5f;
-
   border-radius: 0.6rem;
   font-weight: 700;
   border: 0.2rem solid;
-  &:first-child{
-    margin-right: .8rem;
-  }
   margin-bottom: 0.3rem;
   font-size: 0.9rem;
   padding: 0.3rem 0.6rem;
-  /* #hl1: Breakpoints: */
-  @media (min-width: 600px) {
+  cursor: pointer;
+}
+
+.cardLink:first-child {
+  margin-right: 0.8rem;
+}
+
+@media (min-width: 600px) {
+  .cardLink {
     padding: 0.4rem 0.6rem;
   }
 }
