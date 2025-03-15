@@ -2,11 +2,12 @@ import { marked } from 'marked';
 import hljs from 'highlight.js';
 import javascript from 'highlight.js/lib/languages/javascript';
 import xml from 'highlight.js/lib/languages/xml';
+
+// ## markdown styles:
 // import "highlight.js/styles/github-dark.css";
-// import "highlight.js/styles/github.css";
 // import "highlight.js/styles/monokai-sublime.css";
-// import "highlight.js/styles/nord.css";
-import "highlight.js/styles/atom-one-light.css";
+import "highlight.js/styles/nord.css";
+// import "highlight.js/styles/atom-one-light.css";
 // import "highlight.js/styles/github.css";
 
 // Register Highlight.js languages

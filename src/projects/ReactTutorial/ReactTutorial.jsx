@@ -4,7 +4,7 @@ import Card from "./components/Card/Card.jsx";
 import lessonData from './data/lessonData.js';
 import JSTlogo from "./images/JSTnet-Logo.PNG";
 
-const App = () => {
+const ReactTutorial = () => {
   return (
     <div className={styles.app}>
       <h1>
@@ -25,4 +25,4 @@ const App = () => {
   );
 }
 
-export default App;
+export default ReactTutorial;
