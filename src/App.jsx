@@ -10,6 +10,7 @@ import NotFound from './pages/404';
 
 // Projects
 import TodoList from './projects/ToDoList/Components/App';
+import HackerNewsSearch from './projects/VanillaVsReact/HackerNewsSearch/HackerNewsSearch';
 
 // ReactTutorial Lessons
 import ReactTutorial from './projects/ReactTutorial/ReactTutorial';
@@ -37,6 +38,7 @@ function App() {
           <Route path='/react-tutorial/props/' element={<Props />} />
           <Route path='/react-tutorial/key-prop/' element={<KeyProp />} />
           <Route path='/react-tutorial/conditional-rendering/' element={<ConditionalRendering />} />
+          <Route path='/vanilla-vs-react/' element={<HackerNewsSearch />} />
         </Routes>
       </Router>
     </div>

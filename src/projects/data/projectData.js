@@ -13,6 +13,12 @@ const projectData = [
     route: '/react-tutorial/',
     image: 'src/assets/images/JSTnet-Logo.png',
   },
+  {
+    title: 'Vanilla JavaScript vs. React',
+    description: 'A comparison between Vanilla JavaScript and React app solutions.',
+    route: '/vanilla-vs-react/',
+    image: 'src/assets/images/vanilla-vs-react.PNG', // figma
+  },
   // Weitere Projekte...
 ];
 
