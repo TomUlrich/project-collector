@@ -1,20 +1,4 @@
-# Learned Concepts
+# ConditionalRendering
 
-## ConditionalRendering
+- how to render JSX elements conditionally using the `if` statement, logical AND operator (`&&`), and logical OR operator (`||`).
 
-**Test Codeblock**
-
-```jsx
-import { Link } from 'react-router-dom';
-import styles from './Card.module.css';
-
-const Card = ({ title, description, route, image, tutorialURL }) => {
-  return (
-    <div className={styles.card}>
-      <img className={styles.cardImage} src={image} alt={`${title} preview`} />
-    </div>
-  );
-};
-
-export default Card;
-```

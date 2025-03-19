@@ -5,8 +5,6 @@
 <br/>
 
 ```jsx
-// Props.jsx
-
 import Book from './Components/Book/Book'; // Import the Book component
 
 function Props() {

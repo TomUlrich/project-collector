@@ -1,20 +1,17 @@
-# Learned Concepts
+# KeyProp
 
-## KeyProp
+-   Use the `map()` method to transform an array of data into an array of elements in JSX.
+-   Use the `key` props for list items when rendering a list in JSX.  
 
-**Test Codeblock**
+## The randomUUID() method
 
 ```jsx
-import { Link } from 'react-router-dom';
-import styles from './Card.module.css';
-
-const KeyProp = ({ title, description, route, image, tutorialURL }) => {
-  return (
-    <div className={styles.card}>
-      <img className={styles.cardImage} src={image} alt={`${title} preview`} />
-    </div>
-  );
-};
-
-export default KeyProp;
+// Use the randomUUID() method to generate a unique key for each book
+const renderedBooks = books.map((book) => {
+  return <Book 
+    key={crypto.randomUUID()} 
+    title={book.title} 
+    author={book.author} 
+  />;
+});
 ```

@@ -8,15 +8,17 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import NotFound from './pages/404';
 
-// Projects
+// Single Projects
 import TodoList from './projects/ToDoList/Components/App';
+
+// VanillaVsReact Projects
 import HackerNewsSearch from './projects/VanillaVsReact/HackerNewsSearch/HackerNewsSearch';
 
 // ReactTutorial Lessons
 import ReactTutorial from './projects/ReactTutorial/ReactTutorial';
 import Props from './projects/ReactTutorial/lessons/GettingStarted/Props';
 import KeyProp from './projects/ReactTutorial/lessons/GettingStarted/KeyProp';
-import ConditionalRendering from './projects/ReactTutorial/lessons/GettingStarted/ConditionalRendering';
+import ConditionalRendering from './projects/ReactTutorial/lessons/GettingStarted/ConditionalRendering/ConditionalRendering';
 
 function App() {
   return (

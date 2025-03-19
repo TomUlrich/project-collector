@@ -19,9 +19,6 @@ function KeyProp() {
   const renderedBooks = books.map((book) => {
     return (<Book key={crypto.randomUUID()} cover={book.cover} title={book.title} author={book.author} />)
   })
-  // const renderedBooks = books.map((book, index) => {
-  //   return (<Book key={index} cover={book.cover} title={book.title} author={book.author} />)
-  // })
 
   // 3. Render the list of books
   return (
