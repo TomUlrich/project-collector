@@ -4,7 +4,7 @@ import styles from "./Card.module.css";
 import DOMPurify from "dompurify";
 import marked from "/src/utils/markdownConfig";
 import hljs from "highlight.js"; // Import Highlight.js for code highlighting
-import MarkdownOverlay from "../MarkdownOverlay/MarkdownOverlay"; // Import the overlay component
+import MarkdownOverlay from "../../../../components/MarkdownOverlay/MarkdownOverlay"; // Import the overlay component
 
 const Card = ({ title, description, route, image, markdown }) => {
   const [showOverlay, setShowOverlay] = useState(false);

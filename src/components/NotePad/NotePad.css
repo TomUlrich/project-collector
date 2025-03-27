@@ -1,0 +1,47 @@
+.notepad-container {
+  position: fixed;
+  top: 0;
+  right: 20px;
+  z-index: 2000;
+
+}
+
+/* .notepad-button {
+  background: #ffcc00;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+} */
+
+.notepad-button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.notepad {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  width: 350px;
+  height: 200px;
+  background: white;
+  border: 1px solid #ccc;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.notepad textarea {
+  flex: 1;
+  width: 100%;
+  padding: 5px;
+
+}
+
+

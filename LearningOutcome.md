@@ -9,7 +9,7 @@
 
 ### Placeholder image URL
 
-```html
+```
 src="https://via.placeholder.com/150"
 ```
 

@@ -1,6 +1,7 @@
 // import './App.css';
 import styles from "./ReactTutorial.module.css";
-import Card from "./components/Card/Card.jsx";
+import Card from "/src/components/Card/Card.jsx"; // #todo
+
 import lessonData from './data/lessonData.js';
 import JSTlogo from "./images/JSTnet-Logo.PNG";
 

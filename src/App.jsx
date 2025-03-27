@@ -1,6 +1,7 @@
 import styles from "./App.module.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from './components/Navbar/Navbar';
+import NotePad from "./components/NotePad/NotePad";
 
 // Pages
 import Home from './pages/Home';
@@ -25,6 +26,7 @@ function App() {
     <div className={styles.app}>
       <Router>
         <Navbar />
+        <NotePad />
         {/* Connect defined routes with desired components */}
         {/* Routes are defined in projectData.js */}
         <Routes>

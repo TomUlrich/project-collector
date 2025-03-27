@@ -1,0 +1,110 @@
+.overlay {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ul,
+  ol {
+    color: #2e3440;
+    margin: initial;
+  }
+  h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1.2rem;
+  }
+  h2 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+  h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+  }
+  h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.6rem;
+  }
+  h5 {
+    font-size: 1rem;
+    margin-bottom: 0.4rem;
+  }
+  ul {
+    list-style-type: disc;
+    padding-left: 1.2rem;
+  }
+  ol {
+    list-style-type: decimal;
+    padding-left: 1.2rem;
+  }
+  li {
+    margin-bottom: 0.4rem;
+  }
+  p {
+    margin-bottom: 0.8rem;
+  }
+  a {
+    text-decoration: underline;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  blockquote {
+    border-left: 4px solid #2e3440;
+    padding-left: 1rem;
+    margin-left: 0;
+  }
+  pre {
+    /* padding: 1rem; */
+    /* border-radius: 8px; */
+  }
+  code {
+    /* color: #eeeeee; */
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* #todo: style the overlay */
+.overlayContent {
+  color: #2e3440;
+  background-color: #eeeeee;
+  padding: 2rem 5vw 3.5rem;
+  max-width: 800px;
+  max-height: 80%;
+  overflow-y: auto;
+  border-radius: 10px;
+  position: relative;
+  width: 90%;
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.markdownContent {
+  font-family: -apple-system, BlinkMacSystemFont, 'Apple Color Emoji', 'Segoe UI Emoji';
+  line-height: 1.6;
+}

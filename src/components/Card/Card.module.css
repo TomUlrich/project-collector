@@ -1,82 +1,82 @@
-
-/* #hl1: Card.css */ 
 .card {
   position: relative;
-  width:400px;
-  border-radius: 8px;
+  --shadowColor: 49 92% 67%;
+  display: flex;
+  flex-wrap: wrap;
+  background: #f8dc5f2c;
+  max-width: 540px;
+  width: 100%;
+  box-shadow: 0.65rem 0.65rem 0 hsl(var(--shadowColor) / 1);
+  border-radius: 0.8rem;
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s;
-  cursor: pointer;
-}
-
-.card:hover {
-  /* transform: scale(1.05); */
+  border: 0.4rem solid;
 }
 
 .cardImage {
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  outline: 0.4rem solid;
   width: 100%;
-  height: 500px;
-  object-fit: contain;
-  transition: opacity 0.3s ease-in-out;
 }
 
-/* Fallback */
-.cardImage {
-  background: #f0f0f0; 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.2rem;
-  color: #999999;
+.textColumn {
+  padding: 2.5rem 2rem 0;
+  flex: 1 0 60%;
 }
 
- .cardImage::before {
-  content: "Kein Bild verfügbar";
+.cardTextContainer {
+  background-color: #fff;
+  padding: 1.4rem 1.4rem 1.2rem;
+  border-radius: 8px;
+  margin-bottom: 1.2rem;
+  min-height: 140px;
 }
 
-.cardContent {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.6);
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.card:hover .cardContent {
-  opacity: 1;
-}
-
-.card h3 {
+.title {
   margin: 0;
-  font-size: 1.5rem;
-  text-align: center;
+  font-size: 1.4rem;
+  margin-bottom: min(1rem, 3vw);
 }
 
-.card p {
-  margin: 8px 0;
-  text-align: center;
+@media (min-width: 600px) {
+  .cardImage {
+    flex: 1 1 150px;
+  }
+
+  .title {
+    font-size: 1.7rem;
+    line-height: 2rem;
+  }
+}
+
+.cardLinkContainer {
+  display: flex;
+  justify-content: space-between;
+  justify-content: flex-end;
+  margin-right: 2px;
+  margin-bottom: 1.8rem;
 }
 
 .cardLink {
-  margin-top: 8px;
-  color: #fff;
+  display: inline-block;
+  color: black;
   text-decoration: none;
-  border: 1px solid white;
-  padding: 8px 16px;
-  border-radius: 4px;
-  transition: background 0.3s ease;
+  background: #f8db5f;
+  border-radius: 0.6rem;
+  font-weight: 700;
+  border: 0.2rem solid;
+  margin-bottom: 0.3rem;
+  font-size: 0.9rem;
+  padding: 0.3rem 0.6rem;
+  cursor: pointer;
 }
 
-.cardLink:hover {
-  background: white;
-  color: #000;
+.cardLink:first-child {
+  margin-right: 0.8rem;
+}
+
+@media (min-width: 600px) {
+  .cardLink {
+    padding: 0.4rem 0.6rem;
+  }
 }
