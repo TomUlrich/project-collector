@@ -21,9 +21,17 @@ const lessonData = [
     title: 'Conditional Rendering',
     description: 'Learn how to render JSX elements based on a condition.',
     route: '/react-tutorial/conditional-rendering/',
-    // image: '/src/projects/ReactTutorial/images/fiction-books.jpg',
-    image: 'https://via.placeholder.com/150',
+    image: '/src/projects/ReactTutorial/images/conditional-rendering.PNG',
+    // image: 'https://via.placeholder.com/150',
     markdown: '/markdown/ConditionalRendering.md',
+  },
+  {
+    title: 'Events',
+    description: 'React events and how to add event handlers to JSX elements.',
+    route: '/react-tutorial/events/',
+    // image: '/src/projects/ReactTutorial/images/conditional-rendering.PNG',
+    image: 'https://via.placeholder.com/150',
+    markdown: '/markdown/Events.md',
   },
 ];
 

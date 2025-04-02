@@ -20,6 +20,7 @@ import ReactTutorial from './projects/ReactTutorial/ReactTutorial';
 import Props from './projects/ReactTutorial/lessons/GettingStarted/Props';
 import KeyProp from './projects/ReactTutorial/lessons/GettingStarted/KeyProp';
 import ConditionalRendering from './projects/ReactTutorial/lessons/GettingStarted/ConditionalRendering/ConditionalRendering';
+import Events from './projects/ReactTutorial/lessons/GettingStarted/Events';
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
           <Route path='/react-tutorial/props/' element={<Props />} />
           <Route path='/react-tutorial/key-prop/' element={<KeyProp />} />
           <Route path='/react-tutorial/conditional-rendering/' element={<ConditionalRendering />} />
+          <Route path='/react-tutorial/events/' element={<Events />} />
           <Route path='/vanilla-vs-react/' element={<HackerNewsSearch />} />
         </Routes>
       </Router>
