@@ -21,6 +21,8 @@ import Props from './projects/ReactTutorial/lessons/GettingStarted/Props';
 import KeyProp from './projects/ReactTutorial/lessons/GettingStarted/KeyProp';
 import ConditionalRendering from './projects/ReactTutorial/lessons/GettingStarted/ConditionalRendering/ConditionalRendering';
 import Events from './projects/ReactTutorial/lessons/GettingStarted/Events';
+import State from './projects/ReactTutorial/lessons/GettingStarted/State';
+import APICall from './projects/ReactTutorial/lessons/GettingStarted/APICall';
 
 function App() {
   return (
@@ -44,6 +46,8 @@ function App() {
           <Route path='/react-tutorial/key-prop/' element={<KeyProp />} />
           <Route path='/react-tutorial/conditional-rendering/' element={<ConditionalRendering />} />
           <Route path='/react-tutorial/events/' element={<Events />} />
+          <Route path='/react-tutorial/state/' element={<State />} />
+          <Route path='/react-tutorial/api-call/' element={<APICall />} />
           <Route path='/vanilla-vs-react/' element={<HackerNewsSearch />} />
         </Routes>
       </Router>

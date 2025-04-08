@@ -29,9 +29,25 @@ const lessonData = [
     title: 'Events',
     description: 'React events and how to add event handlers to JSX elements.',
     route: '/react-tutorial/events/',
-    // image: '/src/projects/ReactTutorial/images/conditional-rendering.PNG',
+    // image: '/src/projects/ReactTutorial/images/events.PNG',
     image: 'https://via.placeholder.com/150',
     markdown: '/markdown/Events.md',
+  },
+  {
+    title: 'State',
+    description: ' how to use the React State system to handle data that changes over time and control the behavior of a component',
+    route: '/react-tutorial/state/',
+    // image: '/src/projects/ReactTutorial/images/state.PNG',
+    image: 'https://via.placeholder.com/150',
+    markdown: '/markdown/State.md',
+  },
+  {
+    title: 'API Call',
+    description: ' how to use the React State system to handle data that changes over time and control the behavior of a component',
+    route: '/react-tutorial/api-call/',
+    // image: '/src/projects/ReactTutorial/images/state.PNG',
+    image: 'https://via.placeholder.com/150',
+    markdown: '/markdown/APICall.md',
   },
 ];
 
